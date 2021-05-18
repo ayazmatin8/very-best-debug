@@ -18,7 +18,9 @@ class Venue < ApplicationRecord
     return matching_comments
   end
 
-  def address
+  
+  
+  def addresses
    my_id = self.id
    matching_address = Venue.where({ :id => my_id })
    venue_address = matching_address.at(0)
